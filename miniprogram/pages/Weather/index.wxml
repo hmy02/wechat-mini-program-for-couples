@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+<view class="weather yesterday">
+<view>
+<view class='date'>今天</view>
+<view class='location'>{{city.adm2}}/{{city.adm1}}</view>
+<view class='tmp'>{{today.tempMin}}℃~{{today.tempMax}}℃</view>
+<view class='cond_txt'>{{today.textDay}}</view>
+</view>
+<view>
+<view class='weather_icon'>
+<image src='{{todyIcon}}'></image>
+</view>
+<view class='lastUpdateDate'>最后更新：{{update}}</view>
+</view>
+</view>
+<view class="weather today">
+<view>
+<text>明天</text>
+<view class='location'>{{city.adm2}}/{{city.adm1}}</view>
+<view class='tmp'>{{tomorrow.tempMin}}℃~{{tomorrow.tempMax}}℃</view>
+<view class='cond_txt'>{{tomorrow.textDay}}</view>
+</view>
+<view>
+<view class='weather_icon'>
+<image src='{{tomorrowIcon}}'></image>
+</view>
+<view class='lastUpdateDate'>最后更新：{{update}}</view>
+</view>
+</view>
+<view class="weather tomorrow">
+<view>
+<text>后天</text>
+<view class='location'>{{city.adm2}}/{{city.adm1}}</view>
+<view class='tmp'>{{afterTomor.tempMin}}℃~{{afterTomor.tempMax}}℃</view>
+<view class='cond_txt'>{{afterTomor.textDay}}</view>
+</view>
+<view>
+<view class='weather_icon'>
+<image src='{{afterTomorIcon}}'></image>
+</view>
+<view class='lastUpdateDate'>最后更新：{{update}}</view>
+</view>
+</view>
+</view>

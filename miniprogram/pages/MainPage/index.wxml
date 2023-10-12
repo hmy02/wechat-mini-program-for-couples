@@ -1,0 +1,84 @@
+<view style="width:100%; background: none;">
+
+<swiper style="background: white; height: 200px; width: 100%;">
+    <swiper-item><image src="Images/HomeCover04.jpg" mode='widthFix' class="swiper-image" /></swiper-item>
+</swiper>
+
+<view class="form-group_label">⚡ 天气</view>
+<button class="form-group" id="button1" bindtap="goto" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);">
+  <view class="form-cell">
+      <view class="slide1">
+      <view class="title">查看天气预报</view>
+      <view class="arrow"></view>
+      </view>
+  </view>
+</button>
+
+<view class="form-group_label">📅 日历</view>
+<view class="form-group" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);">
+  <view class="form-cell">
+    <view class="slide">
+      <view class="title">今天是我们在一起的第{{days}}天</view>
+    </view>
+  </view>
+  <view class="form-cell">
+    <view class="slide">
+      <view class="title">一周年快乐🎉</view>
+    </view>
+  </view>
+  <view class="form-cell">
+    <view class="slide">
+      <view class="title">今天的IELTS任务是：{{sentences[(days)%lenOfSentences]}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="form-group_label">💰 积分榜</view>
+  <view class="form-group" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);">
+  <view class="form-cell">
+      <view class="slide">
+      <view class="title">{{userB}}的积分：{{creditB}}</view>
+      </view>
+  </view>
+  <view class="form-cell">
+      <view class="slide">
+      <view class="title">{{userA}}的积分：{{creditA}}</view>
+      </view>
+  </view>
+</view>
+
+
+<view class="form-group_label">📕 雅思学习状态</view>
+  <view class="form-group" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);">
+  <view class="form-cell">
+      <view class="slide">
+      <view class='item-left flex-wrp-row'>
+      <text class='text'>{{userB}}: {{studyB}}</text>
+    </view>
+    <view class='item-right flex-wrp-row'>
+      <text class='text'>累计打卡{{countdayB}}天</text>
+    </view>
+      </view>
+  </view>
+  <view class="form-cell">
+      <view class="slide">
+        <view class='item-left flex-wrp-row'>
+      <text class='text'>{{userA}}: {{studyA}}</text>
+    </view>
+    <view class='item-right flex-wrp-row'>
+      <text class='text'>累计打卡{{countdayA}}天</text>
+    </view>
+      </view>
+  </view>
+</view>
+</view>
+
+
+<movable-area style="pointer-events: none; position: fixed; width: 100%; height: 100%;" wx:if="{{isShow}}">
+  <movable-view style="pointer-events: auto; width: 20%; height: 20%;" x="{{screenWidth}}" y="{{screenHeight}}" direction="all">
+    <button class="btn-normal" hover-class="btn-hover" size="mini" bindtap="toAddPage" 
+    style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+      <image style = "margin-top: 10px; height: 100%; width: 100%;" mode="widthFix" src="Images/Plus.png"/>打卡
+    </button>
+  </movable-view>
+</movable-area>

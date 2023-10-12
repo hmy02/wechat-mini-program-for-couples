@@ -1,0 +1,80 @@
+/* miniprogram/pages/list/index.wxss */
+
+.form-cell {
+    padding: 0;
+  }
+  
+  .slide {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  .slide1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .info_title {
+    font-size: 17px;
+  }
+
+  .arrow{
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    position: absolute;
+    right: 50rpx;
+    transform: rotate(45deg);
+    margin-top:5rpx;
+    }
+
+    .swiper-image{
+        display: block;
+        height: 100%; 
+        width: 100%;
+        background-color: darkgray;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .btn-normal{
+        margin: 2%;
+        color: white;
+        background-color: #3d3d3d;
+      }
+      .btn-hover{
+        color: black;
+        background-color: gray;
+      }
+
+      .right{
+        text-align:right;
+        padding-right:30rpx;
+        }
+
+        /* 水平显示 */
+ 
+.flex-wrp-row {
+    display: flex;
+    flex-direction: row;
+  }
+   
+  .item-left {
+     flex: 1; /* 重要 */
+     align-items:center;
+  }
+   
+  .item-right {
+    position: relative;
+    align-items:center;
+  }
+   
+
+
+  
