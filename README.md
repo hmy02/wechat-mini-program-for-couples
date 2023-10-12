@@ -4,5 +4,4 @@ Provides a convenient romance program that supports uploading tasks, completing 
 ## Functional diagram
 ![](pic1.jpg)
 
-## Design of Menu Bar
-![](pic2.jpg)
+decorated with our own photos and used elements of pokemon for menu bar designs
